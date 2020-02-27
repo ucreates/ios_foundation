@@ -12,6 +12,11 @@
 @synthesize id;
 @synthesize intersect;
 @synthesize destroy;
+@synthesize timeLine;
+- (id)init {
+    self->timeLine = [[TimeLine alloc] init];
+    return self;
+}
 - (void)onCreate {
     return;
 }
@@ -34,3 +39,4 @@
     return;
 }
 @end
+

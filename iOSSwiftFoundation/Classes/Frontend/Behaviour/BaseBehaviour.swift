@@ -11,10 +11,12 @@ open class BaseBehaviour: NSObject {
     public var id: Int!
     public var intersect: Bool!
     public var destroy: Bool!
+    public var timeLine: TimeLine!
     public override init() {
         super.init()
         self.destroy = false
         self.intersect = false
+        self.timeLine = TimeLine()
     }
     open func onCreate() -> Void {
         return

@@ -12,7 +12,9 @@
 #import <Foundation/Foundation.h>
 #import "FiniteStateMachine.h"
 #import "Parameter.h"
+#import "TimeLine.h"
 @interface BaseBehaviour : NSObject
+@property TimeLine* timeLine;
 @property int id;
 @property BOOL intersect;
 @property BOOL destroy;
